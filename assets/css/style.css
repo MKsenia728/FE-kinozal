@@ -64,6 +64,11 @@
   letter-spacing: 0.1em;
 }
 
+.input-lg,
+.input-group-lg > .form-control {
+  font-size: 0.875rem;
+}
+
 html {
   font-size: 16px;
   overflow-y: scroll;
@@ -111,6 +116,29 @@ a:hover, a:focus {
 
 .vertical-slider__img {
   width: 100%;
+}
+
+.user-login {
+  position: relative;
+}
+
+.user-login__tabs {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  border: none;
+  margin-right: -5px;
+}
+
+.user-login a {
+  padding: 14px 5px 12px !important;
+  border: none !important;
+  background-color: transparent !important;
+  color: #dddddd;
+}
+
+.user-login .active a {
+  color: #ffffff !important;
 }
 
 @media (min-width: 576px) {
