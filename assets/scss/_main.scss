@@ -56,10 +56,11 @@
     }
     &__about {
       text-align: justify;
+      // @include block-shortener($fz: 1rem, $lh: 1.5, $h: 200px, $l: 10)
     }
     &__btn {
       float: right;
-      margin-right: $gap;
+      // margin-right: $gap / 3;
       margin-bottom: $gap * 2;
     }
     

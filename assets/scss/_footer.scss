@@ -1,0 +1,30 @@
+.footer {
+  background-color: $color-dark;
+  
+  &-group {
+    margin-bottom: $gap * 2;
+    margin-top:  $gap * 3;
+     
+    &__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    &__link {
+      color: darken($color-light, 55%);
+      font-weight: 100;
+      &:hover,
+      &:focus {
+        color: $color-light;
+      }
+    }
+  }
+  &__main {
+    text-align: center;
+    margin-bottom: 20px;
+    strong {
+      color: $color-light;
+    }
+
+  }
+}
