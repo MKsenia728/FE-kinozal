@@ -1,29 +1,27 @@
 .footer {
   background-color: $color-dark;
-  
+
   &-group {
-   
-    
     &-top {
-      margin-top:  $gap * 3;
+      margin-top: $gap * 3;
       @include md-min {
-        margin-bottom: $gap * 2; 
+        margin-bottom: $gap * 2;
       }
       @include md {
         margin-bottom: $gap / 3 * 2;
       }
     }
-    
+
     &-button {
       margin-bottom: $gap * 2;
-    @include md-min {
-      margin-top:  $gap * 3;  
+      @include md-min {
+        margin-top: $gap * 3;
+      }
+      @include md {
+        margin-top: 0;
+      }
     }
-    @include md {
-      margin-top: 0;
-    }
-  }
-     
+
     &__list {
       list-style: none;
       margin: 0;
@@ -44,6 +42,5 @@
     strong {
       color: $color-light;
     }
-
   }
 }

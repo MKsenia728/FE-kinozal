@@ -1,19 +1,16 @@
 .film-video {
   font-size: 1.2em;
   @extend %limit-content;
- 
-  // overflow: hidden;
-  // position: relative;
-  
+
   &__well {
     border-radius: 0 0 4px 4px;
     background-color: #f1f1f1;
   }
   &__sign {
     white-space: nowrap;
-    
+
     &:not(:first-of-type) {
-      margin-left: $gap; 
+      margin-left: $gap;
     }
   }
   &__badge {
@@ -23,7 +20,7 @@
 
 .film-description {
   @extend %limit-content;
-  
+
   &__text {
     margin-bottom: 0;
   }
@@ -31,13 +28,11 @@
 
 .user-review {
   @extend %limit-content;
-  // overflow: hidden;
-  // position: relative;
   margin-bottom: $gap * 2;
-  
+
   &-panel {
     margin-bottom: $gap;
-    
+
     &__text {
       p {
         margin-bottom: 0 !important;
@@ -48,9 +43,7 @@
 
 .comment-film-form {
   @extend %limit-content;
-  // overflow: hidden;
-  // position: relative;
-  
+
   &__btn {
     float: right;
   }

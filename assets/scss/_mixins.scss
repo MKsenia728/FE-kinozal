@@ -43,3 +43,10 @@
 
   border: 0;
 }
+@mixin divider($w: 100%, $h: 3.2px, $col: rgba(240, 173, 79, 0.7)) {
+  content: "";
+  position: absolute;
+  width: $w;
+  height: $h;
+  background-color: $col;
+}

@@ -31,15 +31,15 @@
   $image-size: 75px;
   $local-gap: 10px;
   $image-size-with-padding: $image-size + $local-gap;
-  
+
   &-item {
     clear: both;
     position: relative;
-    
+
     &:not(:last-child) {
       min-height: $image-size-with-padding;
       margin-bottom: $gap;
-      
+
       &::after {
         content: "";
         position: absolute;
@@ -58,7 +58,7 @@
         background-color: $color-accent;
         border-color: $color-accent;
       }
-    }       
+    }
     &__thumbnail {
       float: left;
       margin: 0 $local-gap $local-gap 0;
@@ -86,34 +86,34 @@
     padding-left: 0;
     padding-right: 0;
   }
-  
+
   &__list {
     margin-bottom: 0;
   }
-  
+
   &__item {
     margin-right: -1px;
     margin-left: -1px;
     background-color: transparent;
     color: $color-primary !important;
     padding-right: 55px;
-    
+
     &:hover,
     &:focus {
       background-color: $color-accent !important;
       border-color: $color-accent;
       color: $color-light !important;
-      
+
       .badge {
         background-color: $color-dark;
       }
     }
-    
+
     &:first-child {
       border-radius: 0;
       border-top: none;
     }
-    
+
     &:last-child {
       border-radius: 0;
       border-bottom: none;

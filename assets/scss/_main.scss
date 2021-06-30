@@ -4,8 +4,6 @@
 .new-films,
 .top-week {
   @extend %limit-content;
-  // overflow: hidden;
-  // position: relative;
   &-row {
     margin-left: -$gap / 2;
     margin-right: -$gap / 2;
@@ -43,9 +41,7 @@
 
 .film-news {
   @extend %limit-content;
-  // overflow: hidden;
-  // position: relative;
-  
+
   &-item {
     
     &__title {
@@ -62,11 +58,9 @@
     }
     &__about {
       text-align: justify;
-      // @include block-shortener($fz: 1rem, $lh: 1.5, $h: 200px, $l: 10)
     }
     &__btn {
       float: right;
-      // margin-right: $gap / 3;
       margin-bottom: $gap * 2;
     }
     
@@ -83,8 +77,6 @@
         color: $color-light;
         background-color: $color-accent;
         border-color: $color-accent;
-        // background-color: #ec971f;
-        // border-color: #d58512;
       }
     }
   }
