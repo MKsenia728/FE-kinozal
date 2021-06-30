@@ -75,7 +75,8 @@
   > .panel-heading {
     color: $color-light;
     background-color: $color-accent;
-    border-color: $color-accent;
+    // border-color: $color-accent;
+    border: none;
     font-size: 1.2rem;
     letter-spacing: 0.1em;
   }

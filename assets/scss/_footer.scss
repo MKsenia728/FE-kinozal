@@ -2,8 +2,27 @@
   background-color: $color-dark;
   
   &-group {
-    margin-bottom: $gap * 2;
-    margin-top:  $gap * 3;
+   
+    
+    &-top {
+      margin-top:  $gap * 3;
+      @include md-min {
+        margin-bottom: $gap * 2; 
+      }
+      @include md {
+        margin-bottom: $gap / 3 * 2;
+      }
+    }
+    
+    &-button {
+      margin-bottom: $gap * 2;
+    @include md-min {
+      margin-top:  $gap * 3;  
+    }
+    @include md {
+      margin-top: 0;
+    }
+  }
      
     &__list {
       list-style: none;

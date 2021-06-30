@@ -16,6 +16,10 @@
     padding-left: $gap / 2;
     padding-right: $gap / 2;
     margin-bottom: $gap;
+    
+    &__img {
+      width: 100%;
+    }
         
     &__thumbnail {
       margin-bottom: 0;
