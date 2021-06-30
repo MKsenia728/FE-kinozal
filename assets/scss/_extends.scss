@@ -4,3 +4,7 @@
 %margin-bottom-lg {
   margin-bottom: $gap * 5.33333;
 }
+%limit-content {
+  overflow: hidden;
+  position: relative;
+}

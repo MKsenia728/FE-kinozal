@@ -87,3 +87,7 @@
 .thumbnai {
   transition: background-color 0.25s;
 }
+.embed-responsive {
+  border: 1px solid $color-gray;
+  border-bottom: none;
+}

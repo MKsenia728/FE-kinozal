@@ -16,7 +16,7 @@ a {
 h1 {
   font-family: $font-header;
   font-size: 3rem;
-  margin: -($gap / 3 * 2) 0 1em 0;
+  margin: -($gap / 2) 0 45px 0;
   
   &::after {
     content: "";

@@ -3,8 +3,9 @@
 }
 .new-films,
 .top-week {
-  overflow: hidden;
-  position: relative;
+  @extend %limit-content;
+  // overflow: hidden;
+  // position: relative;
   &-row {
     margin-left: -$gap / 2;
     margin-right: -$gap / 2;
@@ -29,7 +30,7 @@
     }
     
     &__title {
-      margin-top: 5px;
+      margin-top: 0;
       margin-bottom: 0;
       transition: color 0.25s;
     }
@@ -37,8 +38,9 @@
 }
 
 .film-news {
-  overflow: hidden;
-  position: relative;
+  @extend %limit-content;
+  // overflow: hidden;
+  // position: relative;
   
   &-item {
     
