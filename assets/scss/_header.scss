@@ -1,47 +1,54 @@
 .header {
   @extend %margin-bottom-lg;
-}
-.header-logo {
-  padding: 100px 0;
 
-  text-align: center;
+  &-logo {
+    padding: 100px 0;
 
-  background-color: $color-dark;
-  background-image: url(../img/header-bg.jpg);
-  background-position: center;
-  background-size: cover;
+    text-align: center;
 
-  &__title {
-    display: block;
+    background-color: $color-dark;
+    background-image: url(../img/header-bg.jpg);
+    background-position: center;
+    background-size: cover;
 
-    color: $color-accent;
+    &__title {
+      display: block;
 
-    font-family: $font-header;
+      color: $color-accent;
 
-    @extend %text-shadow;
-    @include xs-min {
-      margin-right: -1rem;
+      font-family: $font-header;
 
-      letter-spacing: 0.33em;
+      @extend %text-shadow;
+      @include xs-min {
+        margin-right: -1rem;
 
-      font-size: 3.5rem;
+        letter-spacing: 0.33em;
+
+        font-size: 3.5rem;
+      }
+      @include xs {
+        letter-spacing: 0.2em;
+
+        font-size: 2.5rem;
+      }
     }
-    @include xs {
+
+    &__description {
+      display: block;
+
       letter-spacing: 0.2em;
 
-      font-size: 2.5rem;
+      color: $color-light;
+
+      font-size: 1.15rem;
+
+      @extend %text-shadow;
     }
   }
 
-  &__description {
-    display: block;
-
-    letter-spacing: 0.2em;
-
-    color: $color-light;
-
-    font-size: 1.15rem;
-
-    @extend %text-shadow;
+  &-menu {
+    .navbar-header button {
+      margin-right: 0;
+    }
   }
 }

@@ -1,5 +1,12 @@
 .main {
   @extend %margin-bottom-lg;
+
+  .site-search {
+    margin-bottom: $gap * 3;
+  }
+  .user-login {
+    margin-bottom: $gap * 4;
+  }
 }
 .new-films,
 .top-week {
@@ -37,6 +44,8 @@
       margin-bottom: 0;
 
       transition: color 0.25s;
+
+      @include block-shortener(1rem, 1.1, 17.6px, 1);
     }
   }
 }
