@@ -1,7 +1,8 @@
 .navbar-inverse {
-  background-color: darken($color-dark, 4%);
-  border-color: transparent;
   margin-bottom: 0;
+
+  border-color: transparent;
+  background-color: darken($color-dark, 4%);
 
   .navbar-nav {
     > .active > a {
@@ -50,15 +51,16 @@
   }
 }
 .navbar-header {
-  text-align: center;
   margin-right: 0;
+
+  text-align: center;
 }
 .navbar-toggle {
   float: none;
 }
 .panel {
-  background-color: darken($color-light, 7%);
   border: none;
+  background-color: darken($color-light, 7%);
 
   &:not(:last-of-type) {
     margin-bottom: $gap * 2;
@@ -73,11 +75,13 @@
   }
 
   > .panel-heading {
-    color: $color-light;
-    background-color: $color-accent;
-    border: none;
-    font-size: 1.2rem;
     letter-spacing: 0.1em;
+
+    color: $color-light;
+    border: none;
+    background-color: $color-accent;
+
+    font-size: 1.2rem;
   }
 }
 .input-lg,

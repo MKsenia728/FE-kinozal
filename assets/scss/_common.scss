@@ -1,10 +1,11 @@
 html {
-  font-size: $font-size;
   overflow-y: scroll;
+
+  font-size: $font-size;
 }
 body {
-  font-size: $font-size;
   font-family: $font-main;
+  font-size: $font-size;
 }
 a {
   color: $color-primary;
@@ -17,50 +18,61 @@ h1 {
   font-family: $font-header;
 
   @include xs-min {
-    font-size: 3rem;
     margin: -($gap / 2) 0 ($gap * 3) 0;
+
+    font-size: 3rem;
   }
   @include xs {
-    font-size: 2rem;
     margin: 0 0 ($gap * 2) 0;
+
+    font-size: 2rem;
   }
 
   &::after {
-    @include divider;
     margin: 0.85em 0 0 $gap;
+
+    @include divider;
   }
 }
 h2 {
   font-family: $font-header;
 
   @include xs-min {
-    font-size: 2.5rem;
     margin: ($gap * 4) 0 ($gap * 3) ($gap * 3);
+
+    font-size: 2.5rem;
   }
   @include xs {
-    font-size: 1.75rem;
     margin: ($gap * 3) 0 ($gap * 2) ($gap * 3);
+
+    font-size: 1.75rem;
   }
 
   &::after {
-    @include divider;
     margin: 0.85em 0 0 $gap;
+
+    @include divider;
   }
 
   &::before {
-    @include divider(30px);
     left: 0;
+
     margin: 0.25em 0 0 0;
+
+    @include divider(30px);
   }
 }
 h3 {
+  text-align: center;
+
   font-size: 1rem;
   font-weight: bold;
-  text-align: center;
 }
 h4 {
-  font-size: 1.125rem;
-  color: $color-light !important;
   margin-top: 10px;
   margin-bottom: 10px;
+
+  color: $color-light !important;
+
+  font-size: 1.125rem;
 }

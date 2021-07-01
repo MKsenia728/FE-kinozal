@@ -1,5 +1,6 @@
 .film-video {
   font-size: 1.2em;
+
   @extend %limit-content;
 
   &__well {
@@ -27,8 +28,9 @@
 }
 
 .user-review {
-  @extend %limit-content;
   margin-bottom: $gap * 2;
+
+  @extend %limit-content;
 
   &-panel {
     margin-bottom: $gap;
